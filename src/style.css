@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.scrollable {
+    max-height: 100vh;
+    overflow: scroll;
+}
+
+.form{
+    padding:50px;
+}
