@@ -16,8 +16,8 @@ const Character = ({
     }
     return (
         <div key={id} className="character_list_item" >
-            <div>
-            <p>Name: {name}</p>
+            <div className="character_img">
+            <p> {name}</p>
             <div className="images">
                 <img  onClick={()=>seeMoreInfo()} src={image} alt=""/>
             </div>
@@ -25,12 +25,12 @@ const Character = ({
             {
                 info && 
                 <div className="more_info">
-                    <div>Name: {name}</div>
-                    <div>Status: {status}</div>
-                    <div>Species: {species}</div>
-                    <div>Gender: {gender}</div>
-                    <div>Origin name: {origin_name}</div>
-                    <div>Location: {location}</div>
+                    <div><b>Name: </b>{name}</div>
+                    <div><b>Status:</b> {status}</div>
+                    <div><b>Species:</b> {species}</div>
+                    <div><b>Gender: </b>{gender}</div>
+                    <div><b>Origin name:</b> {origin_name}</div>
+                    <div><b>Location:</b> {location}</div>
                 </div>
             }
         </div>

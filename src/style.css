@@ -33,7 +33,7 @@ body {
     text-align: center;
 }
 .form p{
-    color:#DAF280;
+    color:rgb(108,176,73);
     font-size: 20px;
     padding-bottom: 15px;
 }
@@ -48,4 +48,32 @@ body {
 }
 .character_list_item{
     display: flex;
+    align-items: center;
+    border:1px solid rgb(89,163,74);
+    width: 80%;
+    margin:50px auto;
+    padding:20px;
+    background-color: rgb(187,219,232);
+    color:rgb(5,3,0);
+}
+.character_list_item:hover{
+    box-shadow: 0px 0px 30px -3px rgb(7,199,204);
+    transition: all .5s ease-in-out;
+}
+.character_img p{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+.character_img img{
+    border: 1px solid rgb(0,0,0);
+}
+.more_info{
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.more_info div b{
+    font-size: 22px;
 }
