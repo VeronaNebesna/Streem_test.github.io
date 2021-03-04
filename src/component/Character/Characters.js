@@ -17,7 +17,7 @@ const Characters = ()=>{
     useEffect(()=>(
         axios({
             method: 'GET',
-            url:`https://rickandmortyapi.com/api/character/?page=${pageNumber}?name=${search}&status=${search}`,
+            url:`https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`,
             }).then(response =>  setState(response.data.results))
     ),[search]);
    

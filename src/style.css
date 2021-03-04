@@ -77,3 +77,56 @@ body {
 .more_info div b{
     font-size: 22px;
 }
+/* locations */
+
+
+.list_of_location{
+    width: 80%;
+    margin: 20px auto;
+    padding:20px;
+    background-color: rgb(125,129,84);
+}
+
+/* residents */
+
+.residens{
+    display: flex;
+}
+.residens a{
+    color:rgb(255,255,255)
+}
+.residens ul li{
+    list-style: none;
+}
+.list_of_location{
+    font-size: 20px;
+}
+
+.list_of_location b{
+    color:rgb(5,3,0);
+    font-weight: 600;
+}
+
+/* episodes */
+
+.episode_list_item{
+    width: 80%;
+    margin:50px auto;
+    padding:20px;
+    background-color: #DAF280;
+    color:rgb(5,3,0)
+}
+.episode_list_item div{
+    font-size: 20px;
+}
+.episode_list_item div b{
+    font-size: 22px;
+}
+.characters{
+    display: flex;
+    align-items: center;
+}
+
+.characters ul li a{
+    color: rgb(5,3,0);
+}

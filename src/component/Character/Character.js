@@ -15,12 +15,12 @@ const Character = ({
         setInfo(prev => !prev)
     }
     return (
-        <div key={id} className="character_list_item" >
+        <div key={id} className="character_list_item">
             <div className="character_img">
-            <p> {name}</p>
-            <div className="images">
-                <img  onClick={()=>seeMoreInfo()} src={image} alt=""/>
-            </div>
+                <p> {name}</p>
+                <div className="images">
+                    <img  onClick={()=>seeMoreInfo()} src={image} alt=""/>
+                </div>
             </div>
             {
                 info && 
