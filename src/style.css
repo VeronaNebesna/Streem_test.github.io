@@ -2,17 +2,50 @@
     margin: 0;
     padding: 0;
 }
-
+@font-face{
+    font-family: 'RM';
+    src: url("./get_schwifty.ttf");
+}
 body {
     max-height: 100vh;
     overflow: hidden;
+    background-color: rgb(0,0,0);
+    color:white;
 }
-
 .scrollable {
     max-height: 100vh;
     overflow: scroll;
 }
 
+/* title of list */
+.title_list{
+    font-family: 'RM';
+    padding-top:10px;
+    text-align: center;
+    font-size: 50px;
+    color: #09C9BC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #DAF280;
+}
+
 .form{
-    padding:50px;
+    margin:50px auto;
+    text-align: center;
+}
+.form p{
+    color:#DAF280;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+.form input{
+    width: 200px;
+    height: 20px;
+    background-color: rgba(0,0,0,0);
+    border:1px solid rgb(9,201,188);
+    box-shadow: 0px 0px 10px 5px rgb(9,201,188);
+    color:rgb(132,202,70);
+    padding:5px
+}
+.character_list_item{
+    display: flex;
 }
