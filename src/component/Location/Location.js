@@ -9,6 +9,7 @@ const Location = ({
     dimension,
     residents
 }) =>{
+
     const [url, setUrl] = useState();
     const [show, setShow] = useState(false)
 
@@ -16,10 +17,9 @@ const Location = ({
         e.preventDefault();
         setUrl(e.target.innerText);
         setShow(true)
-    }
+    };
+
     return(
-<>
-      
         <div className="list_of_location" key={id}>
             <div><b>Name:</b> {name}</div>
             <div><b>Type:</b> {type}</div>
@@ -29,11 +29,7 @@ const Location = ({
                 <ul>
                     {
                         residents.map(i =>{
-                            return(
-                                <>
-                                <li><Link to="" onClick={(e)=> getPerson(e)}>{i}</Link></li>
-                                </>
-                            )
+                            return(<li><Link to="" onClick={(e)=> getPerson(e)}>{i}</Link></li>)
                         })
                     }
                 </ul>
@@ -44,7 +40,6 @@ const Location = ({
                 </div>
             </div>
         </div>
-        </>
     )
 }
 

@@ -28,33 +28,34 @@ const Characters = ()=>{
             setPageNumber((prev)=>prev+1)
         }
     }
-  return (
-    <div>
-        <div className="list_of_chacracter" className="scrollable" onScroll={(e)=>handleScroll(e)}>
-        <div className="title_list">List of characters</div>
-            <form action="" className="form">
-                <p>Search:</p>
-                <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)}/>
-            </form>
-        {
-            state.map(item=>{
-                return(
-                    <Character
-                        id={item.id}
-                        name={item.name}
-                        image={item.image}
-                        status={item.status}
-                        species={item.species}
-                        gender={item.gender}
-                        origin_name={item.origin.name}
-                        location={item.location.name}
-                    />
-                )
-            })
-        }
+
+    return (
+        <div>
+            <div className="list_of_chacracter" className="scrollable" onScroll={(e)=>handleScroll(e)}>
+                <div className="title_list">List of characters</div>
+                <form action="" className="form">
+                    <p>Search:</p>
+                    <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)}/>
+                </form>
+            {
+                state.map(item=>{
+                    return(
+                        <Character
+                            id={item.id}
+                            name={item.name}
+                            image={item.image}
+                            status={item.status}
+                            species={item.species}
+                            gender={item.gender}
+                            origin_name={item.origin.name}
+                            location={item.location.name}
+                        />
+                    )
+                })
+            }
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 
 export default Characters

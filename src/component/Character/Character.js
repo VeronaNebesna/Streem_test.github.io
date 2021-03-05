@@ -10,10 +10,13 @@ const Character = ({
     origin_name, 
     location,
     }) =>{
+
     const [info, setInfo] = useState(false);
+
     function seeMoreInfo (){
         setInfo(prev => !prev)
     }
+    
     return (
         <div key={id} className="character_list_item">
             <div className="character_img">

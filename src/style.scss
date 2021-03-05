@@ -1,0 +1,167 @@
+$color_b:rgb(0,0,0);
+ul li{
+    list-style: none;
+}
+a{
+    display: block;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'RM';
+    src: url("./get_schwifty.ttf");
+}
+body {
+    max-height: 100vh;
+    overflow: hidden;
+    background-color: $color_b;
+    color:white;
+}
+.scrollable {
+    max-height: 100vh;
+    overflow: scroll;
+}
+.btns{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+    button{
+        width: 200px;
+        height: 40px;
+        margin:10px 20px;
+        border:none;
+        a{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}
+.characters_btn{
+    background-color:rgb(187,219,232);
+    a{
+        color:rgb(0,0,0);
+    }
+}
+.location_btn{
+    background-color: rgb(125,129,84);
+    a{
+        color: rgb(255,255,255);
+    }
+}
+.episodes_btn{
+    background-color:  #DAF280;
+    a{
+        color:  $color_b;
+    }
+}
+/* title of list */
+.title_list{
+    font-family: 'RM';
+    padding-top:10px;
+    text-align: center;
+    font-size: 50px;
+    color: #09C9BC;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #DAF280;
+}
+.form{
+    margin:50px auto;
+    text-align: center;
+    p{
+        color:rgb(108,176,73);
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    input{
+        width: 200px;
+        height: 20px;
+        background-color: rgba(0,0,0,0);
+        border:1px solid rgb(9,201,188);
+        box-shadow: 0px 0px 10px 5px rgb(9,201,188);
+        color:rgb(132,202,70);
+        padding:5px
+    }
+}
+.character_list_item{
+    display: flex;
+    align-items: center;
+    border:1px solid rgb(89,163,74);
+    width: 80%;
+    margin:50px auto;
+    padding:20px;
+    background-color: rgb(187,219,232);
+    color:$color_b;
+    &:hover{
+        box-shadow: 0px 0px 30px -3px rgb(7,199,204);
+        transition: all .5s ease-in-out;
+    }
+}
+.character_img{
+    p{
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 10px;
+        font-weight: 900;
+        }
+    img{
+        border: 1px solid $color_b;
+    }
+} 
+.more_info{
+    padding-left: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    b{
+        font-size: 22px;
+    }
+}
+
+/* locations */
+.list_of_location{
+    width: 80%;
+    margin: 20px auto;
+    padding:20px;
+    background-color: rgb(125,129,84);
+}
+
+/* residents */
+
+.residens{
+    display: flex;
+    a{
+        color:rgb(255,255,255)
+    }
+}
+.list_of_location{
+    font-size: 20px;
+    b{
+        color:$color_b;
+        font-weight: 600;
+    }
+}
+
+/* episodes */
+
+.episode_list_item{
+    width: 80%;
+    margin:50px auto;
+    padding:20px;
+    background-color: #DAF280;
+    color:$color_b;
+    div{
+        font-size: 20px;
+        b{
+            font-size: 22px;
+        }
+    }
+}
+.characters{
+    display: flex;
+    align-items: center;
+    ul li a{
+        color: $color_b;
+    }
+}

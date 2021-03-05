@@ -4,8 +4,8 @@ import axios from "axios"
 
 
 const Episodes = () =>{
-    const [state, setState]=useState([])
-    const [pageNumber, setPageNumber]=useState(1)
+    const [state, setState]=useState([]);
+    const [pageNumber, setPageNumber]=useState(1);
     const [search, setSearch] = useState("");
 
     useEffect(()=>(
@@ -28,7 +28,8 @@ const Episodes = () =>{
         if (element.scrollHeight - element.scrollTop === element.clientHeight) {
             setPageNumber((prev)=>prev+1)
         }
-    }
+    };
+
     return(
        <div>
         <div className="list_of_chacracter" className="scrollable" onScroll={(e)=>handleScroll(e)}>
@@ -37,19 +38,19 @@ const Episodes = () =>{
                 <p>Search:</p>
                 <input type="text" value={search} onChange={(e)=>setSearch(e.target.value)}/>
             </form>
-        {
-            state.map(item=>{
-                return(
-                    <Episode
-                        id={item.id}
-                        name={item.name}
-                        date={item.air_date}
-                        episode={item.episode}
-                        characters={item.characters}
-                    />
-                )
-            })
-        }
+                {
+                    state.map(item=>{
+                        return(
+                            <Episode
+                                id={item.id}
+                                name={item.name}
+                                date={item.air_date}
+                                episode={item.episode}
+                                characters={item.characters}
+                            />
+                        )
+                    })
+                }
         </div>
     </div>
     )
