@@ -16,7 +16,41 @@ body {
     max-height: 100vh;
     overflow: scroll;
 }
+.btns{
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+}
 
+.btns button{
+    width: 200px;
+    height: 40px;
+    margin:10px 20px;
+    border:none;
+}
+.btns button a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+.characters_btn{
+    background-color:rgb(187,219,232);
+}
+.characters_btn a{
+    color:rgb(0,0,0);
+}
+.location_btn{
+    background-color: rgb(125,129,84);
+}
+.location_btn a{
+    color: rgb(255,255,255);
+}
+.episodes_btn{
+    background-color:  #DAF280;
+}
+.episodes_btn a{
+    color:  rgb(0,0,0);
+}
 /* title of list */
 .title_list{
     font-family: 'RM';
